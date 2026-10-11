@@ -33,9 +33,3 @@ https://raw.githubusercontent.com/hahaen/my-qx/main/rules/iOSUpdateBlock.snippet
 https://raw.githubusercontent.com/hahaen/my-qx/main/rules/TunnelblickDirect.snippet, tag=TunnelblickDirect, enabled=true
 https://raw.githubusercontent.com/hahaen/my-qx/main/rules/MacOSUpdateBlock.snippet, tag=MacOSUpdateBlock, enabled=true
 ```
-
-文件名使用英文，每个片段开头均有中文用途说明；iOS 文件的四条规则使用 `reject`。两个更新屏蔽文件的重叠域名均使用 `reject`，按设备用途选择启用。规则会拒绝连接列出的域名，尚未在设备上验证完整的系统更新屏蔽效果。macOS 文件包含 Apple 服务相关域名，阻断范围以文件内容为准。
-
-之前使用中文文件名的订阅，请改用以上英文文件名的链接。
-
-远程分流配置语法参考 [Quantumult X 官方示例](https://github.com/crossutility/Quantumult-X/blob/master/sample.conf)。不要将 GitHub 访问令牌写进配置链接。
