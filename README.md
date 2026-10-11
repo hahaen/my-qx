@@ -1,4 +1,4 @@
-# 自用 Quantumult X（圈 X）
+# my-qx
 
 用于维护个人 Quantumult X 配置、分流规则、重写与脚本。当前为私有仓库。
 
@@ -20,10 +20,10 @@
 3. 检查订阅地址、节点密码、Cookie、Token 和 MITM 私钥等敏感内容；不需要同步的内容放入 `local/`。
 4. 在圈 X 中导入配置并验证后，再提交更新。
 
-本机仓库：`/Users/hahaen/mi/github/quantumult-x`。
+本机仓库：`/Users/hahaen/mi/github/my-qx`。
 
 ```sh
-cd /Users/hahaen/mi/github/quantumult-x
+cd /Users/hahaen/mi/github/my-qx
 git status
 git add config rules rewrite scripts README.md
 git diff --cached
