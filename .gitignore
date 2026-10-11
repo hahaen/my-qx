@@ -1,0 +1,20 @@
+.DS_Store
+._*
+.idea/
+.vscode/
+
+# 本地敏感内容，不同步到 GitHub
+local/
+private/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# 编辑器与临时文件
+*.swp
+*.swo
+*~
+*.tmp
