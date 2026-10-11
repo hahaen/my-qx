@@ -1,4 +1,4 @@
-## 远程资源链接
+## 分流规则
 
 在圈 X 的「分流」资源中添加下列 Raw 链接，保留文件内的策略。它们是分流片段，不是完整配置，也不是重写资源。
 
@@ -8,3 +8,15 @@
 | `iOSUpdateBlock.snippet`（iOS 更新屏蔽） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/iOSUpdateBlock.snippet) | 拒绝连接四个 Apple 更新相关域名 |
 | `TunnelblickDirect.snippet`（Tunnelblick 直连） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/TunnelblickDirect.snippet) | 指定 Tunnelblick 服务器 IP 直连 |
 | `MacOSUpdateBlock.snippet`（macOS 更新屏蔽） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/MacOSUpdateBlock.snippet) | 拒绝文件中列出的 macOS 更新相关域名 |
+
+## 重写配置
+
+| 文件 | Raw 链接 | 实际策略 |
+| --- | --- | --- |
+| 暂无 | — | — |
+
+## 脚本
+
+| 文件 | Raw 链接 | 实际策略 |
+| --- | --- | --- |
+| 暂无 | — | — |
