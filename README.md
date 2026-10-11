@@ -33,8 +33,25 @@ git push origin main
 
 ## 远程资源链接
 
-上传文件后，可在 GitHub 文件页面点击 **Raw**，将链接用于圈 X 对应的远程资源。
+在圈 X 的「分流」资源中添加下列 Raw 链接，保留文件内的策略。它们是分流片段，不是完整配置，也不是重写资源。
 
-链接格式：`https://raw.githubusercontent.com/hahaen/my-qx/main/<目录>/<文件名>`。
+| 文件 | Raw 链接 | 实际策略 |
+| --- | --- | --- |
+| `白名单分流.snippet` | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/%E7%99%BD%E5%90%8D%E5%8D%95%E5%88%86%E6%B5%81.snippet) | 三个域名直连 |
+| `iOS屏蔽更新.snippet` | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/iOS%E5%B1%8F%E8%94%BD%E6%9B%B4%E6%96%B0.snippet) | 四个 Apple 域名直连；原文件名为“屏蔽更新”，但当前内容不屏蔽更新 |
+| `Tunnelblick直连.snippet` | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/Tunnelblick%E7%9B%B4%E8%BF%9E.snippet) | 指定 Tunnelblick 服务器 IP 直连 |
+| `MacOSUpdateBlock.snippet` | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/MacOSUpdateBlock.snippet) | 拒绝文件中列出的 macOS 更新相关域名 |
 
-当前目录仅有占位文件；实际配置、规则、重写和脚本上传后才能使用相应链接。不要将 GitHub 访问令牌写进配置链接。
+也可将以下四行加入现有配置的 `[filter_remote]` 段（已有该段时不要重复添加段标题）：
+
+```ini
+[filter_remote]
+https://raw.githubusercontent.com/hahaen/my-qx/main/rules/%E7%99%BD%E5%90%8D%E5%8D%95%E5%88%86%E6%B5%81.snippet, tag=白名单分流, enabled=true
+https://raw.githubusercontent.com/hahaen/my-qx/main/rules/iOS%E5%B1%8F%E8%94%BD%E6%9B%B4%E6%96%B0.snippet, tag=iOS更新域名直连, enabled=true
+https://raw.githubusercontent.com/hahaen/my-qx/main/rules/Tunnelblick%E7%9B%B4%E8%BF%9E.snippet, tag=Tunnelblick直连, enabled=true
+https://raw.githubusercontent.com/hahaen/my-qx/main/rules/MacOSUpdateBlock.snippet, tag=macOS更新屏蔽, enabled=true
+```
+
+四个片段均保留上传前的原始内容。`iOS屏蔽更新.snippet` 与 `MacOSUpdateBlock.snippet` 存在相同域名但策略相反，按设备用途选择启用，避免同时使用造成冲突。macOS 文件包含 Apple 服务相关域名，阻断范围以文件内容为准。
+
+远程分流配置语法参考 [Quantumult X 官方示例](https://github.com/crossutility/Quantumult-X/blob/master/sample.conf)。不要将 GitHub 访问令牌写进配置链接。

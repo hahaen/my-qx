@@ -1,0 +1,18 @@
+# 分流规则配置片段包含若干条分流规则；可通过资源引用的方式使用。
+# 片段文件将保存在 Quantumult X 目录下的 Profiles 子目录中。
+# 样例可参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.snippet
+
+;host, www.example.com, direct
+
+# host-suffix, googleapis.com, proxy
+# host-keyword, google, proxy
+# ip-cidr, 10.0.0.0/8, direct
+# geoip, cn, direct
+# final, proxy
+# proxy代理 direct 直连
+
+
+#玩偶哥哥（直连）
+host-suffix, wogg.link, direct
+host-suffix, wogg.xyz, direct
+host-suffix, xxooo.cf, direct
