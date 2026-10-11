@@ -13,24 +13,6 @@
 
 目录中的 `.gitkeep` 仅用于保留空目录，无需导入圈 X。
 
-## 后续放入本地配置
-
-1. 从圈 X 导出现有配置，去除敏感内容后放入 `config/`。
-2. 将独立规则、重写和脚本分别放入对应目录。
-3. 订阅地址、节点密码、Cookie、Token 和 MITM 私钥等敏感内容保留在圈 X 本地或被 Git 忽略的 `local/` 目录，不提交到公开仓库。
-4. 在圈 X 中导入配置并验证后，再提交更新。
-
-本机仓库：`/Users/hahaen/mi/github/my-qx`。
-
-```sh
-cd /Users/hahaen/mi/github/my-qx
-git status
-git add config rules rewrite scripts README.md
-git diff --cached
-git commit -m "chore: 更新圈 X 配置"
-git push origin main
-```
-
 ## 远程资源链接
 
 在圈 X 的「分流」资源中添加下列 Raw 链接，保留文件内的策略。它们是分流片段，不是完整配置，也不是重写资源。
