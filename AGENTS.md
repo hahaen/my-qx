@@ -16,7 +16,7 @@
 
 ## 文件命名与说明
 
-- 资源文件名使用英文，名称应明确表达用途；当前采用 `WhitelistDirect`、`iOSUpdateBlock`、`TunnelblickDirect`、`MacOSUpdateBlock`。
+- 资源文件名使用英文，名称应明确表达用途；当前采用 `WhitelistDirect`、`iOSUpdateBlock`、`MacOSUpdateBlock`。
 - 分流片段开头添加以 `#` 开始的中文用途说明，说明实际匹配范围及策略。
 - 每个可供圈 X 使用的脚本、分流片段或重写资源，都必须在 README 的资源表中登记一行，使用“文件 / Raw 链接 / 实际策略”三列，在英文文件名后附上中文说明。
 - README 保持简洁，不添加项目介绍、目录用途表、`.gitkeep` 说明或批量配置代码示例。维护过程、提交命令、本机路径、历史迁移及验证限制写在本文件。
@@ -64,9 +64,10 @@ README 必须按“分流规则”“重写配置”“脚本”分为三个独�
 | --- | --- |
 | `白名单分流.snippet` | `WhitelistDirect.snippet` |
 | `iOS屏蔽更新.snippet` | `iOSUpdateBlock.snippet` |
-| `Tunnelblick直连.snippet` | `TunnelblickDirect.snippet` |
 
 `MacOSUpdateBlock.snippet` 文件名未变。
+
+2026-10-26 已移除指定 VPN 服务器 IP 的直连片段及其订阅入口。
 
 远程分流配置语法参考 [Quantumult X 官方示例](https://github.com/crossutility/Quantumult-X/blob/master/sample.conf)。不要将 GitHub 访问令牌写进配置链接。
 

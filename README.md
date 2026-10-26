@@ -6,7 +6,6 @@
 | --- | --- | --- |
 | `WhitelistDirect.snippet`（白名单分流（直连）） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/WhitelistDirect.snippet) | 三个域名直连 |
 | `iOSUpdateBlock.snippet`（iOS 更新屏蔽） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/iOSUpdateBlock.snippet) | 拒绝连接四个 Apple 更新相关域名 |
-| `TunnelblickDirect.snippet`（Tunnelblick 直连） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/TunnelblickDirect.snippet) | 指定 Tunnelblick 服务器 IP 直连 |
 | `MacOSUpdateBlock.snippet`（macOS 更新屏蔽） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rules/MacOSUpdateBlock.snippet) | 拒绝文件中列出的 macOS 更新相关域名 |
 
 ## 重写配置
