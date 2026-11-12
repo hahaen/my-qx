@@ -12,7 +12,7 @@
 
 | 文件 | Raw 链接 | 实际策略 |
 | --- | --- | --- |
-| 暂无 | — | — |
+| `ZfbTabDiagnostic.snippet`（ZFB 底栏诊断） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rewrite/ZfbTabDiagnostic.snippet) | 通过「重写 → 规则资源」临时订阅。仅对 `mugw.alipay.com` 启用 MitM，检查响应中的底栏与理财标记并保留原响应。测试完成后停用。 |
 
 ## 脚本
 
@@ -20,4 +20,4 @@
 
 | 文件 | Raw 链接 | 实际策略 |
 | --- | --- | --- |
-| 暂无 | — | — |
+| `ZfbTabDiagnostic.js`（ZFB 底栏标记检查） | [脚本链接](https://raw.githubusercontent.com/hahaen/my-qx/main/scripts/ZfbTabDiagnostic.js) | 使用入口：重写 → 规则资源 → `ZfbTabDiagnostic.snippet` 自动调用；功能：仅在圈 X「日志」输出状态码、响应格式及标记是否出现。 |
