@@ -1,4 +1,0 @@
-; ZFB 底栏诊断。仅在测试时启用，检查指定网关的响应是否含底栏或理财标记。
-hostname = mugw.alipay.com
-
-^https?://mugw\.alipay\.com(?::443)?(?:/|\?|$) url script-response-body https://raw.githubusercontent.com/hahaen/my-qx/main/scripts/ZfbTabDiagnostic.js
