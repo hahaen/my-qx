@@ -12,7 +12,7 @@
 
 | 文件 | Raw 链接 | 实际策略 |
 | --- | --- | --- |
-| `ZfbTabDiagnostic.snippet`（ZFB 底栏诊断） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rewrite/ZfbTabDiagnostic.snippet) | 通过「重写 → 规则资源」临时订阅。仅对 `mugw.alipay.com` 启用 MitM，检查响应中的底栏与理财标记并保留原响应。测试完成后停用。 |
+| `ZfbTabDiagnostic.snippet`（ZFB 底栏诊断） | [订阅链接](https://raw.githubusercontent.com/hahaen/my-qx/main/rewrite/ZfbTabDiagnostic.snippet) | 通过「重写 → 规则资源」临时订阅。检查 `mugw.alipay.com` 的 HTTP 和 HTTPS 响应，原样放行。长按首页「日志」，通过右上角菜单选择 Info，重开 ZFB 后搜索 `ZfbTabDiagnostic`。测试完成后停用。 |
 
 ## 脚本
 
